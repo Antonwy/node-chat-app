@@ -1,23 +1,21 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "A socket.io chat app",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server/server.js",
-    "start": "node server/server.js",
     "test": "jest",
-    "test-watch": "nodemon --exec 'npm test'"
+    "client": "cd client && npm start",
+    "server": "cd server && nodemon server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Antonwy/node-chat-app.git"
+  },
+  "author": "Anton Wyrowski",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4",
-    "socket.io": "^2.2.0"
+  "bugs": {
+    "url": "https://github.com/Antonwy/node-chat-app/issues"
   },
-  "devDependencies": {
-    "jest": "^24.1.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.9"
-  }
+  "homepage": "https://github.com/Antonwy/node-chat-app#readme"
 }
