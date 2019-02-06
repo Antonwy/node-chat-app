@@ -6,13 +6,6 @@ A little node chat app, build using socket.io
 ```bash
 npm install 
 ```
-
-### For the server:
 ```bash
 npm run dev
-```
-
-### For the client:
-```bash
-npm start
 ```
