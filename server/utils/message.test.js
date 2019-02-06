@@ -1,14 +1,10 @@
-const expect = require('jest');
-
 const {generateMessage} = require('./message');
 
-describe('generateMessage', () => {
-    it('should genereate the correct message object', () => {
-        let from = "Jen";
-        let text = "Some message";
-        let message = generateMessage(from, text);
+test('generating Message', () => {
+    let from = "Jen";
+    let text = "Some message";
+    let message = generateMessage(from, text);
 
-        expect(message.createdAt).toBeA('number')
-        expect(message).toInclude({from,text})
-    })
+    expect(typeof message.createdAt).toBe('number')
+    expect(message).toMatchObject({from, text})
 })
